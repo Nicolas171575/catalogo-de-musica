@@ -1,3 +1,9 @@
+import { NextResponse } from 'next/server';
+
+export async function GET() {
+  return NextResponse.json({ ok: true });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("loginForm");
   const wrapper = document.querySelector(".wrapper");
@@ -22,4 +28,4 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Usuário ou senha incorretos!");
     }
   });
-});
+}) 
